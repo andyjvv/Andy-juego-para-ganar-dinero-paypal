@@ -1,0 +1,38 @@
+//Inicializar el juego
+var game = {
+  timer: 0,
+  money: 0,
+  level: 0,
+};
+
+//Inicializar el temporizador
+function startTimer() {
+  game.timer = setInterval(function() {
+    game.timer++;
+  }, 1000);
+}
+
+//Método para minar postrecitos
+function minePostre() {
+  game.money += 10;
+}
+
+//Método para subir de nivel
+function levelUp() {
+  game.level++;
+  game.money += 100;
+}
+
+//Método para retirar dinero a Paypal
+function withdrawToPaypal() {
+  if (game.money >= 100) {
+    //Retirar el dinero
+  }
+}
+
+//Método para retirar dinero de forma instantánea
+function withdrawInstant() {
+  if (game.level >= 5) {
+    //Retirar el dinero
+  }
+}
